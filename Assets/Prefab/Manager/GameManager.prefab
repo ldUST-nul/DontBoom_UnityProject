@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5843391677857964227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2850805625174044556}
+  - component: {fileID: 5366266559845325365}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2850805625174044556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5843391677857964227}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1382539, y: -5.8224907, z: 6.87091}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5366266559845325365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5843391677857964227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ea043fd88855f47b14b86361d07d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  context:
+    gamePlayObjects:
+      ballManager:
+        ballGenerator: []
+      stageControl: []
+      goalControl: []
+      uiControl:
+        m_animator: {fileID: 0}
+        gameUI:
+          m_timer: {fileID: 0}
+          m_score: {fileID: 0}
+    gameResultObjects:
+      resultUIControl:
+        m_animator: {fileID: 0}
+        resultUI:
+          m_retryButton: {fileID: 0}
+          m_titleButton: {fileID: 0}
+          m_nextLevelButton: {fileID: 0}
+          m_typeNextSceneName: 
+          m_shutter: {fileID: 0}
+          m_timer: {fileID: 0}
+          m_score: {fileID: 0}
+    audioData:
+      m_audioPlayer: {fileID: 0}
+      m_standbyBGM: {fileID: 8300000, guid: f9a54f89abf5dc045919a799dbdc0b40, type: 3}
+      m_playBGM: {fileID: 8300000, guid: 2e533895e55cdad4fa6d84d799ba2c93, type: 3}
+      m_tickSound: {fileID: 0}
+      m_shutterSound: {fileID: 0}
+      m_clickSound: {fileID: 0}
+    stageDirection:
+      cameraControll:
+        m_camera: {fileID: 0}
+        m_initialTransform: {fileID: 0}
+        m_centerOffset: {x: 0, y: 0, z: 0}
+        m_defaultFollowSpeed: 0
+        m_defaultFollowAmount: 0
+        m_zoomPerUnit: 0.5
+        m_minZoom: 0
+        m_maxZoom: 12
+        m_zoomSpeed: 3
+      stageLightsControll:
+        lights: []
+        m_animator: {fileID: 0}
+    status:
+      gameTimeLimit: 0
+  gameData: {fileID: 0}
+  spawnSchedule: {fileID: 0}
